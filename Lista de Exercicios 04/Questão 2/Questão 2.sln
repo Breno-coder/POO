@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questão 2", "Questão 2\Questão 2.csproj", "{B30CF732-559B-4A35-8BE9-FC5553526938}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74D409F9-58C9-4A5D-9C85-EC968EE60DDA}"
-	ProjectSection(SolutionItems) = preProject
-		Calculadora.cs = Calculadora.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
