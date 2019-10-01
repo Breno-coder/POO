@@ -28,12 +28,12 @@ namespace Questão_1
             Paciente paciente = new Paciente();
             Resultado resultado = new Resultado();
 
-            //paciente.setnome(txbnome.Text);
-            //paciente.setsobrenome(txbsobrenome.Text);
-            //paciente.setidade(Convert.ToInt32(txbidade.Text));
-            //paciente.setsexo(escolhasexo.Text);
-            //paciente.setaltura(Convert.ToDouble(txbAltura.Text));
-            //paciente.setpeso(Convert.ToInt32(txbPeso.Text));
+            paciente.setnome(txbnome.Text);
+            paciente.setsobrenome(txbsobrenome.Text);
+            paciente.setidade(Convert.ToInt32(txbidade.Text));
+            paciente.setsexo(escolhasexo.Text);
+            paciente.setaltura(Convert.ToDouble(txbAltura.Text));
+            paciente.setpeso(Convert.ToInt32(txbPeso.Text));
 
             resultado.Show();
             

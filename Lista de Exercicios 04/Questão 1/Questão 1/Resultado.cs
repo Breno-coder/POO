@@ -12,9 +12,20 @@ namespace Questão_1
 {
     public partial class Resultado : Form
     {
+        Paciente resul = new Paciente();
         public Resultado()
         {
             InitializeComponent();
+        }
+
+        private void Resultado_Load(object sender, EventArgs e)
+        {
+            lblnome.Text = resul.getnome();
+        }
+
+        private void lblnome_Click(object sender, EventArgs e)
+        {
+            lblnome.Text = resul.getnome();
         }
     }
 }
