@@ -1,0 +1,10 @@
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\bin\Debug\nota.exe.config
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\bin\Debug\nota.exe
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\bin\Debug\nota.pdb
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.csprojAssemblyReference.cache
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.Form1.resources
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.Properties.Resources.resources
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.csproj.GenerateResource.cache
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.exe
+C:\Users\Cliente\Documents\Breno\POO\Testes\nota\nota\obj\Debug\nota.pdb
