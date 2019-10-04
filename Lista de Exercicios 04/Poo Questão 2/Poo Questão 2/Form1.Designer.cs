@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_resultado = new System.Windows.Forms.Label();
             this.txt_Segundonumero = new System.Windows.Forms.TextBox();
+            this.btnreset = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_subtracao
@@ -89,6 +91,8 @@
             this.txt_Primeironumero.Size = new System.Drawing.Size(130, 41);
             this.txt_Primeironumero.TabIndex = 4;
             this.txt_Primeironumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Primeironumero.TextChanged += new System.EventHandler(this.txt_Primeironumero_TextChanged);
+            this.txt_Primeironumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Primeironumero_KeyPress);
             // 
             // btn_potencia
             // 
@@ -149,12 +153,35 @@
             this.txt_Segundonumero.Size = new System.Drawing.Size(130, 41);
             this.txt_Segundonumero.TabIndex = 11;
             this.txt_Segundonumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Segundonumero.TextChanged += new System.EventHandler(this.txt_Segundonumero_TextChanged);
+            this.txt_Segundonumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Segundonumero_KeyPress);
+            // 
+            // btnreset
+            // 
+            this.btnreset.Location = new System.Drawing.Point(370, 185);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(75, 39);
+            this.btnreset.TabIndex = 12;
+            this.btnreset.Text = "Reset";
+            this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(296, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Raiz";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 225);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.txt_Segundonumero);
             this.Controls.Add(this.lbl_resultado);
             this.Controls.Add(this.label1);
@@ -187,6 +214,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_resultado;
         private System.Windows.Forms.TextBox txt_Segundonumero;
+        private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.Label label2;
     }
 }
 

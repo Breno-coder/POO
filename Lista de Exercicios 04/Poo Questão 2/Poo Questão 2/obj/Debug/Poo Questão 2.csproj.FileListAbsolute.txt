@@ -8,3 +8,13 @@ D:\Documents\Breno\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj
 D:\Documents\Breno\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj.CoreCompileInputs.cache
 D:\Documents\Breno\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.exe
 D:\Documents\Breno\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.pdb
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\bin\Debug\Poo Questão 2.exe.config
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\bin\Debug\Poo Questão 2.exe
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\bin\Debug\Poo Questão 2.pdb
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csprojAssemblyReference.cache
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo_Questão_2.Form1.resources
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo_Questão_2.Properties.Resources.resources
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj.GenerateResource.cache
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj.CoreCompileInputs.cache
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.exe
+D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.pdb

@@ -19,52 +19,155 @@ namespace Poo_Questão_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if ()
-            {
-
-            }
+            
         }
 
         private void btn_adicao_Click(object sender, EventArgs e)
         {
             soma adicao = new soma();
-            lbl_resultado.Text = Convert.ToString(adicao.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
-            lbl_operador.Text = "+";
+            try
+            {
+                    lbl_resultado.Text = Convert.ToString(adicao.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                    lbl_operador.Text = "+";
+                    
+            }
+            catch 
+            {
+                MessageBox.Show("Operação invalida");
+            }
+            
         }
 
         private void btn_subtracao_Click(object sender, EventArgs e)
         {
-            subtracao subtrai = new subtracao();
-            lbl_resultado.Text = Convert.ToString(subtrai.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
-            lbl_operador.Text = "-";
+            try
+            {
+                subtracao subtrai = new subtracao();
+                lbl_resultado.Text = Convert.ToString(subtrai.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_operador.Text = "-";
+                
+            }
+            catch
+            {
+                MessageBox.Show("Operação invalida");
+            }
+            
         }
 
         private void btn_multiplicacao_Click(object sender, EventArgs e)
         {
-            multiplicacao multiplicar = new multiplicacao();
-            lbl_resultado.Text = Convert.ToString(multiplicar.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
-            lbl_operador.Text = "x";
+            try
+            {
+                multiplicacao multiplicar = new multiplicacao();
+                lbl_resultado.Text = Convert.ToString(multiplicar.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_operador.Text = "x";
+                 
+
+            }
+            catch
+            {
+                MessageBox.Show("Operação invalida");
+            }
+            
         }
 
         private void btn_divisao_Click(object sender, EventArgs e)
         {
-            divisao dividir = new divisao();
-            lbl_resultado.Text = Convert.ToString(dividir.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
-            lbl_operador.Text = "/";
+            try
+            {
+                divisao dividir = new divisao();
+                lbl_resultado.Text = Convert.ToString(dividir.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_operador.Text = "/";
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Operação invalida");
+            }
+            
         }
 
         private void btn_raiz_Click(object sender, EventArgs e)
         {
-            CalculadoraCientifica raiz = new CalculadoraCientifica();
-            lbl_resultado.Text = Convert.ToString(raiz.Calcularaiz(Convert.ToDouble(txt_Segundonumero.Text)));
-            lbl_operador.Text = "√";
-            txt_Primeironumero.Visible = false; 
+            try
+            {
+                CalculadoraCientifica raiz = new CalculadoraCientifica();
+                lbl_resultado.Text = Convert.ToString(raiz.Calcularaiz(Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_operador.Text = "√";
+                txt_Primeironumero.Visible = false; 
+            }
+            catch
+            {
+                MessageBox.Show("Operação invalida");
+            }
+            
         }
 
         private void btn_potencia_Click(object sender, EventArgs e)
         {
-            CalculadoraCientifica potencia = new CalculadoraCientifica();
-            lbl_resultado.Text = Convert.ToString(potencia.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+            try
+            {
+                CalculadoraCientifica potencia = new CalculadoraCientifica();
+                lbl_resultado.Text = Convert.ToString(potencia.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                
+
+            }
+            catch
+            {
+                MessageBox.Show("Operação invalida");
+            }
+            
+        }
+
+        private void txt_Primeironumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Primeironumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
+            {
+                e.Handled = true;
+                try
+                {
+                    Convert.ToDouble(this.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Formato Invalido");
+                }
+            }
+        }
+
+        private void txt_Segundonumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Segundonumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
+            {
+                e.Handled = true;
+                try
+                {
+                    Convert.ToDouble(this.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Formato Invalido");
+                }
+            }
+            
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            txt_Primeironumero.Visible = true;
+            lbl_operador.Text = "";
+            lbl_resultado.Text = "";
         }
     }
 }
