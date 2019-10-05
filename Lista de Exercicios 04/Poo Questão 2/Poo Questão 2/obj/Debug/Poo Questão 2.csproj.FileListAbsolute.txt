@@ -18,3 +18,13 @@ D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj.CoreCompileInputs.cache
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.exe
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.pdb
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\bin\Debug\Poo Questão 2.exe.config
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\bin\Debug\Poo Questão 2.exe
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\bin\Debug\Poo Questão 2.pdb
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csprojAssemblyReference.cache
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo_Questão_2.Form1.resources
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo_Questão_2.Properties.Resources.resources
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj.GenerateResource.cache
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.exe
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Poo Questão 2\Poo Questão 2\obj\Debug\Poo Questão 2.pdb

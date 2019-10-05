@@ -43,7 +43,7 @@
             this.lblIMC.Size = new System.Drawing.Size(67, 31);
             this.lblIMC.TabIndex = 0;
             this.lblIMC.Text = "IMC";
-            this.lblIMC.Click += new System.EventHandler(this.lblIMC_Click);
+            
             // 
             // lblClassificacaodoIMC
             // 
@@ -54,7 +54,7 @@
             this.lblClassificacaodoIMC.Size = new System.Drawing.Size(290, 31);
             this.lblClassificacaodoIMC.TabIndex = 2;
             this.lblClassificacaodoIMC.Text = "Classificação do IMC";
-            this.lblClassificacaodoIMC.Click += new System.EventHandler(this.lblClassificacaodoIMC_Click);
+            
             // 
             // lblClassificacaodopercentualdegordura
             // 
@@ -75,7 +75,7 @@
             this.lblnome.Size = new System.Drawing.Size(82, 33);
             this.lblnome.TabIndex = 4;
             this.lblnome.Text = "label";
-            this.lblnome.Click += new System.EventHandler(this.lblnome_Click);
+           
             // 
             // Resultado
             // 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.escolha = new System.Windows.Forms.ComboBox();
             this.txtsalario = new System.Windows.Forms.TextBox();
             this.TxtAjuda = new System.Windows.Forms.TextBox();
             this.txtValorproducao = new System.Windows.Forms.TextBox();
@@ -39,28 +39,29 @@
             this.txttelefone = new System.Windows.Forms.TextBox();
             this.txtendereco = new System.Windows.Forms.TextBox();
             this.txtCodigoSetor = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.Limpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // escolha
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.escolha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.escolha.FormattingEnabled = true;
+            this.escolha.Items.AddRange(new object[] {
             "Fornecedor",
             "Vendedor",
             "Operario",
             "Administrador"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 37);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.escolha.Location = new System.Drawing.Point(12, 12);
+            this.escolha.Name = "escolha";
+            this.escolha.Size = new System.Drawing.Size(179, 37);
+            this.escolha.TabIndex = 0;
+            this.escolha.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtsalario
             // 
             this.txtsalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsalario.Location = new System.Drawing.Point(231, 182);
+            this.txtsalario.Location = new System.Drawing.Point(12, 166);
             this.txtsalario.Name = "txtsalario";
             this.txtsalario.Size = new System.Drawing.Size(267, 33);
             this.txtsalario.TabIndex = 1;
@@ -73,7 +74,7 @@
             // TxtAjuda
             // 
             this.TxtAjuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAjuda.Location = new System.Drawing.Point(231, 221);
+            this.TxtAjuda.Location = new System.Drawing.Point(12, 205);
             this.TxtAjuda.Name = "TxtAjuda";
             this.TxtAjuda.Size = new System.Drawing.Size(267, 33);
             this.TxtAjuda.TabIndex = 2;
@@ -86,7 +87,7 @@
             // txtValorproducao
             // 
             this.txtValorproducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorproducao.Location = new System.Drawing.Point(231, 258);
+            this.txtValorproducao.Location = new System.Drawing.Point(12, 244);
             this.txtValorproducao.Name = "txtValorproducao";
             this.txtValorproducao.Size = new System.Drawing.Size(267, 33);
             this.txtValorproducao.TabIndex = 3;
@@ -98,7 +99,7 @@
             // txtvalorvendas
             // 
             this.txtvalorvendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtvalorvendas.Location = new System.Drawing.Point(231, 299);
+            this.txtvalorvendas.Location = new System.Drawing.Point(12, 283);
             this.txtvalorvendas.Name = "txtvalorvendas";
             this.txtvalorvendas.Size = new System.Drawing.Size(267, 33);
             this.txtvalorvendas.TabIndex = 4;
@@ -110,7 +111,7 @@
             // txtvalordividas
             // 
             this.txtvalordividas.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtvalordividas.Location = new System.Drawing.Point(521, 299);
+            this.txtvalordividas.Location = new System.Drawing.Point(521, 147);
             this.txtvalordividas.Name = "txtvalordividas";
             this.txtvalordividas.Size = new System.Drawing.Size(267, 33);
             this.txtvalordividas.TabIndex = 5;
@@ -122,7 +123,7 @@
             // txtvalorcredito
             // 
             this.txtvalorcredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtvalorcredito.Location = new System.Drawing.Point(521, 260);
+            this.txtvalorcredito.Location = new System.Drawing.Point(521, 108);
             this.txtvalorcredito.Name = "txtvalorcredito";
             this.txtvalorcredito.Size = new System.Drawing.Size(267, 33);
             this.txtvalorcredito.TabIndex = 6;
@@ -134,7 +135,7 @@
             // txtnome
             // 
             this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.Location = new System.Drawing.Point(179, 16);
+            this.txtnome.Location = new System.Drawing.Point(197, 12);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(591, 33);
             this.txtnome.TabIndex = 7;
@@ -146,7 +147,7 @@
             // txttelefone
             // 
             this.txttelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttelefone.Location = new System.Drawing.Point(179, 55);
+            this.txttelefone.Location = new System.Drawing.Point(197, 51);
             this.txttelefone.Name = "txttelefone";
             this.txttelefone.Size = new System.Drawing.Size(289, 33);
             this.txttelefone.TabIndex = 8;
@@ -158,7 +159,7 @@
             // txtendereco
             // 
             this.txtendereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtendereco.Location = new System.Drawing.Point(481, 55);
+            this.txtendereco.Location = new System.Drawing.Point(499, 51);
             this.txtendereco.Name = "txtendereco";
             this.txtendereco.Size = new System.Drawing.Size(289, 33);
             this.txtendereco.TabIndex = 9;
@@ -169,28 +170,40 @@
             // txtCodigoSetor
             // 
             this.txtCodigoSetor.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoSetor.Location = new System.Drawing.Point(231, 143);
+            this.txtCodigoSetor.Location = new System.Drawing.Point(12, 127);
             this.txtCodigoSetor.Name = "txtCodigoSetor";
             this.txtCodigoSetor.Size = new System.Drawing.Size(267, 33);
             this.txtCodigoSetor.TabIndex = 10;
             this.txtCodigoSetor.Text = "Codigo do Setor";
             this.txtCodigoSetor.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             // 
-            // button1
+            // btnCalcular
             // 
-            this.button1.Location = new System.Drawing.Point(12, 309);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalcular.Location = new System.Drawing.Point(713, 415);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.TabIndex = 11;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // Limpar
+            // 
+            this.Limpar.Location = new System.Drawing.Point(713, 386);
+            this.Limpar.Name = "Limpar";
+            this.Limpar.Size = new System.Drawing.Size(75, 23);
+            this.Limpar.TabIndex = 12;
+            this.Limpar.Text = "Limpar";
+            this.Limpar.UseVisualStyleBackColor = true;
+            this.Limpar.Click += new System.EventHandler(this.Limpar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Limpar);
+            this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtCodigoSetor);
             this.Controls.Add(this.txtendereco);
             this.Controls.Add(this.txttelefone);
@@ -201,7 +214,7 @@
             this.Controls.Add(this.txtValorproducao);
             this.Controls.Add(this.TxtAjuda);
             this.Controls.Add(this.txtsalario);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.escolha);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -212,7 +225,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox escolha;
         private System.Windows.Forms.TextBox txtsalario;
         private System.Windows.Forms.TextBox TxtAjuda;
         private System.Windows.Forms.TextBox txtValorproducao;
@@ -223,7 +236,8 @@
         private System.Windows.Forms.TextBox txttelefone;
         private System.Windows.Forms.TextBox txtendereco;
         private System.Windows.Forms.TextBox txtCodigoSetor;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button Limpar;
     }
 }
 

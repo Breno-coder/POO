@@ -74,7 +74,7 @@ namespace Questão_1
 
         public double CalculaIMC()
         {
-            double Imc = Peso / Math.Pow(Altura, 2);
+            double Imc = Peso / (Math.Pow( Altura, 2));
 
             return Imc;
         }
@@ -225,6 +225,7 @@ namespace Questão_1
                         gorduracorporal = "Muito Elevado";
                     }
                 }
+                return "0";
             }
 
             if (sexo == "Feminino")
@@ -341,7 +342,7 @@ namespace Questão_1
                         gorduracorporal = "Muito Elevado";
                     }
                 }
-
+                return "0";
             }
     
             return gorduracorporal;

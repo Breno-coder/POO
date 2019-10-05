@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Questão_3
 {
-    abstract class Pessoa
+    abstract public class Pessoa
     {
         string Nome, Endereco;
         int telefone;

@@ -90,6 +90,7 @@
             this.txbAltura.Name = "txbAltura";
             this.txbAltura.Size = new System.Drawing.Size(144, 26);
             this.txbAltura.TabIndex = 6;
+            this.txbAltura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbAltura_KeyPress);
             // 
             // label2
             // 

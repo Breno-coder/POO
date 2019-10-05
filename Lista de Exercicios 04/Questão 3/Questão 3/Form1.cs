@@ -19,6 +19,53 @@ namespace Questão_3
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (escolha.SelectedIndex == 0)
+            {
+                txtValorproducao.Enabled = false;
+                txtvalorvendas.Enabled = false;
+                txtCodigoSetor.Enabled = false;
+                txtsalario.Enabled = false;
+                TxtAjuda.Enabled = false;
+
+                txtvalorcredito.Enabled = true;
+                txtvalordividas.Enabled = true;
+            }
+
+            if (escolha.SelectedIndex == 1)
+            {
+                txtvalorcredito.Enabled = false;
+                txtvalordividas.Enabled = false;
+                TxtAjuda.Enabled = false;
+                txtValorproducao.Enabled = false;
+
+                txtvalorvendas.Enabled = true;
+                txtCodigoSetor.Enabled = true;
+                txtsalario.Enabled = true;
+            }
+
+            if(escolha.SelectedIndex == 2)
+            {
+                txtvalorcredito.Enabled = false;
+                txtvalordividas.Enabled = false;
+                TxtAjuda.Enabled = false;
+                txtvalorvendas.Enabled = false;
+
+                txtValorproducao.Enabled = true;
+                txtCodigoSetor.Enabled = true;
+                txtsalario.Enabled = true;
+            }
+
+            if (escolha.SelectedIndex == 3)
+            {
+                txtValorproducao.Enabled = false;
+                txtvalorvendas.Enabled = false;
+                txtvalordividas.Enabled = false;
+                txtvalorcredito.Enabled = false;
+
+                TxtAjuda.Enabled = true;
+                txtsalario.Enabled = true;
+                txtCodigoSetor.Enabled = true;
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -194,6 +241,55 @@ namespace Questão_3
         private void txtvalordividas_Click(object sender, EventArgs e)
         {
             txtvalordividas.Text = "";
+
+        }
+
+        private void Limpar_Click(object sender, EventArgs e)
+        {
+            txtnome.Text = "Nome";
+            txtendereco.Text = "Endereco";
+            txttelefone.Text = "Telefone";
+            txtvalorcredito.Text = "Valor do Credito";
+            txtvalordividas.Text = "Valor da Divida";
+            txtCodigoSetor.Text = "Codigo do Setor";
+            txtsalario.Text = "Salario Bruto";
+            TxtAjuda.Text = "Valor Ajuda de Custo";
+            txtValorproducao.Text = "Valor da Produção";
+            txtvalorvendas.Text = "Valor das Vendas";
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            
+            if (escolha.SelectedIndex == 0)
+            {
+                Fornecedor fornecedor = new Fornecedor
+                fornecedor.SetValorCredito(Convert.ToDouble(txtvalorcredito.Text));
+                fornecedor.SetValorDivida(Convert.ToDouble(txtvalordividas.Text));
+            }
+
+            if (escolha.SelectedIndex == 1)
+            {
+                Vendedor vendedor = new Vendedor();
+
+                vendedor.    txtvalorvendas.Text
+                txtCodigoSetor.Enabled = true;
+                txtsalario.Enabled = true;
+            }
+
+            if (escolha.SelectedIndex == 2)
+            { 
+                txtValorproducao.Enabled = true;
+                txtCodigoSetor.Enabled = true;
+                txtsalario.Enabled = true;
+            }
+
+            if (escolha.SelectedIndex == 3)
+            {
+                TxtAjuda.Enabled = true;
+                txtsalario.Enabled = true;
+                txtCodigoSetor.Enabled = true;
+            }
 
         }
     }

@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Questão_3
 {
-    class Fornecedor : Pessoa
+    public class Fornecedor : Pessoa
     {
         double ValorCredito, ValorDivida;
 
-        Fornecedor()
+        public Fornecedor()
         { }
+        
 
         public void SetValorCredito(double valorcredito)
         {

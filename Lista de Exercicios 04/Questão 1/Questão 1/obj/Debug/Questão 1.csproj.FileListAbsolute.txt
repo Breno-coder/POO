@@ -20,3 +20,14 @@ D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debu
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csproj.CoreCompileInputs.cache
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.exe
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.pdb
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csprojAssemblyReference.cache
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão_1.Form1.resources
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão_1.Properties.Resources.resources
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão_1.Resultado.resources
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csproj.GenerateResource.cache
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.exe
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.pdb
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\bin\Debug\Questão 1.exe.config
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\bin\Debug\Questão 1.exe
+C:\Users\Cliente\Documents\Breno\POO\POO\Lista de Exercicios 04\Questão 1\Questão 1\bin\Debug\Questão 1.pdb

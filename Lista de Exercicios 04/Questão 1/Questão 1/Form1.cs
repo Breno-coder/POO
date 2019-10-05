@@ -32,12 +32,16 @@ namespace Questão_1
             paciente.setsobrenome(txbsobrenome.Text);
             paciente.setidade(Convert.ToInt32(txbidade.Text));
             paciente.setsexo(escolhasexo.Text);
-            paciente.setaltura(Convert.ToDouble(txbAltura.Text));
+             paciente.setaltura(Convert.ToDouble(txbAltura.Text));
             paciente.setpeso(Convert.ToInt32(txbPeso.Text));
 
-            resultado.Show();
-            
-        }
+            double IMC = paciente.CalculaIMC();
+            string Classificacaodoimc = paciente.ClassificaImc(IMC), Classificacaodopercentualdegordura = paciente.ClassificaPercentualGordura(IMC, Convert.ToInt32(txbidade.Text), escolhasexo.Text);
+            // MessageBox.Show();
+            MessageBox.Show(IMC.ToString());
+            MessageBox.Show(Classificacaodoimc);
+            MessageBox.Show(Classificacaodopercentualdegordura);
+        }   
 
         private void txbnome_MouseClick(object sender, MouseEventArgs e)
         {
@@ -65,6 +69,12 @@ namespace Questão_1
             txbidade.Text = "";
         }
 
-       
+        private void txbAltura_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar && char == '.' ))
+            {
+
+            }
+        }
     }
 }

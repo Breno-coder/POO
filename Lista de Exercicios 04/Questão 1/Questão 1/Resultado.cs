@@ -22,24 +22,11 @@ namespace Questão_1
         private void Resultado_Load(object sender, EventArgs e)
         {
             Paciente resul = new Paciente();
-            lblnome.Text = resul.getnome();
-            Imc = resul.CalculaIMC;
-            lblClassificacaodoIMC = resul.ClassificaImc(Imc);
-        }
-
-        private void lblnome_Click(object sender, EventArgs e)
-        {
-            lblnome.Text = resul.getnome();
-        }
-
-        private void lblIMC_Click(object sender, EventArgs e)
-        {
+            
+            
             
         }
 
-        private void lblClassificacaodoIMC_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }
