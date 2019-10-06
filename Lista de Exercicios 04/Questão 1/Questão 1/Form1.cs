@@ -36,11 +36,9 @@ namespace Questão_1
             paciente.setpeso(Convert.ToInt32(txbPeso.Text));
 
             double IMC = paciente.CalculaIMC();
-            string Classificacaodoimc = paciente.ClassificaImc(IMC), Classificacaodopercentualdegordura = paciente.ClassificaPercentualGordura(IMC, Convert.ToInt32(txbidade.Text), escolhasexo.Text);
-            // MessageBox.Show();
-            MessageBox.Show(IMC.ToString());
-            MessageBox.Show(Classificacaodoimc);
-            MessageBox.Show(Classificacaodopercentualdegordura);
+            string Classificacaodoimc = paciente.ClassificaImc(IMC), Classificacaodopercentualdegordura = paciente.ClassificaPercentualGordura();
+            
+            MessageBox.Show("Olá " + txbnome.Text + " você atualmente possui um IMC de " + IMC.ToString() + ", ou seja a sua situação é de um IMC " + Classificacaodoimc + ", com um percentual de gordura equivalente à " + Classificacaodopercentualdegordura);
         }   
 
         private void txbnome_MouseClick(object sender, MouseEventArgs e)
@@ -71,9 +69,9 @@ namespace Questão_1
 
         private void txbAltura_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar && char == '.' ))
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
-
+                e.Handled = true;
             }
         }
     }

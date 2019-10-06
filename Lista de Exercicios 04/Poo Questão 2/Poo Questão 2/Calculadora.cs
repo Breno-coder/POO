@@ -6,53 +6,24 @@ using System.Threading.Tasks;
 
 namespace Poo_Questão_2
 {
-    abstract class Calculadora
+    public class Calculadora
     {
-        double Primeironumero, Segundonumero;
-
-        abstract public double calcular(double Primeironumero, double Segundonumero);
-    }
-        
-
-    class soma : Calculadora
-    {
-        public soma()
-        {
-        }
-        public override double calcular(double Primeironumero, double Segundonumero)
+        public double somar(double Primeironumero, double Segundonumero)
         {
             return Primeironumero + Segundonumero;
         }
-    }
 
-    class subtracao : Calculadora
-    {
-        public subtracao()
-        {
-        }
-        public override double calcular(double Primeironumero, double Segundonumero)
+        public double subtrair(double Primeironumero, double Segundonumero)
         {
             return Primeironumero - Segundonumero;
         }
-    }
 
-    class divisao : Calculadora
-    {
-        public divisao()
-        {
-        }
-        public override double calcular(double Primeironumero, double Segundonumero)
+        public double dividir(double Primeironumero, double Segundonumero)
         {
             return Primeironumero / Segundonumero;
         }
-    }
 
-    class multiplicacao : Calculadora
-    {
-        public multiplicacao()
-        {
-        }
-        public override double calcular(double Primeironumero, double Segundonumero)
+        public double multiplicar(double Primeironumero, double Segundonumero)
         {
             return Primeironumero * Segundonumero;
         }
@@ -63,7 +34,8 @@ namespace Poo_Questão_2
         public CalculadoraCientifica()
         {
         }
-        public override double calcular(double Primeironumero, double Segundonumero)
+
+        public double Calcularpotencia(double Primeironumero, double Segundonumero)
         {
             return Math.Pow(Primeironumero, Segundonumero);
         }
