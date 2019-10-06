@@ -6,25 +6,37 @@ using System.Threading.Tasks;
 
 namespace Questão_3
 {
-    class Operario : Empregado
+    public class Operario : Empregado
     {
         double ValorProducao, Comissao;
-        Operario()
+        public Operario()
         { }
+
+        public void setValorProducao(double valorproducao)
+        {
+            ValorProducao = valorproducao;
+        }
+
+        public void setSalarioBase(double salariobase)
+        {
+            SalarioBase = salariobase;
+
+        }
 
         public double CalcularComissao()
         {
-            return Comissao = ValorProducao * (0.5/100);
+            return (Comissao = ValorProducao * 0.005);
         }
 
         public override double CalcularValorInss()
         {
-            return ValorInss = SalarioBase * (8 / 100); ;
+            return (ValorInss = SalarioBase * 0.08); ;
         }
 
         public override double CalcularSalario()
         {
-            return (SalarioBase + Comissao) - ValorInss;
+            return ((SalarioBase + Comissao) - ValorInss);
         }
     }
+
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Questão_3
 {
-    abstract class Empregado : Pessoa
+    abstract public class Empregado : Pessoa
     {
-        int CodigoSetor;
+        readonly int CodigoSetor;
         public double SalarioBase, ValorInss;
 
         abstract public double CalcularValorInss();

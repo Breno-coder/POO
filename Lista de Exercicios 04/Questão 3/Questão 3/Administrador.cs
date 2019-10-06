@@ -10,22 +10,34 @@ namespace Questão_3
     {
         double AjudaDeCusto;
 
-        Administrador()
+        public Administrador()
         { }
+
+        public void setSalarioBase(double salariobase)
+        {
+            SalarioBase = salariobase;
+
+        }
+
         public void SetAjudaDeCusto(double ajudadecusto)
         {
             AjudaDeCusto = ajudadecusto;
         }
 
+        public double getAjudaDeCusto()
+        {
+            return AjudaDeCusto;
+        }
+
         public override double CalcularValorInss()
         {
            
-            return  ValorInss = SalarioBase * (11 / 100);
+            return  (ValorInss = SalarioBase * 0.11);
         }
 
         public override double CalcularSalario()
         {
-            return (SalarioBase + AjudaDeCusto) - ValorInss;
+            return ((SalarioBase + AjudaDeCusto) - ValorInss);
         }
     }
 }

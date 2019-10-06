@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Questão_3
 {
-    public partial class Form1 : Form
-    {
-        public Form1()
+    public partial class Receita : Form
+    { 
+        public Receita()
         {
             InitializeComponent();
         }
@@ -68,25 +68,14 @@ namespace Questão_3
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void txtsalario_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-        
-
         private void txtsalario_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
                 try
@@ -105,11 +94,6 @@ namespace Questão_3
             txtsalario.Text = "";
         }
 
-        private void txtnome_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
         private void txttelefone_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar))
@@ -120,7 +104,7 @@ namespace Questão_3
 
         private void TxtAjuda_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
                 try
@@ -136,7 +120,7 @@ namespace Questão_3
 
         private void txtValorproducao_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
                 try
@@ -152,7 +136,7 @@ namespace Questão_3
 
         private void txtvalorvendas_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
                 try
@@ -168,7 +152,7 @@ namespace Questão_3
 
         private void txtvalorcredito_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
                 try
@@ -184,7 +168,7 @@ namespace Questão_3
 
         private void txtvalordividas_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
                 try
@@ -196,11 +180,6 @@ namespace Questão_3
                     MessageBox.Show("Formato Invalido");
                 }
             }
-        }
-
-        private void txtCodigoSetor_Enter(object sender, EventArgs e)
-        {
-            txtCodigoSetor.Text = "";
         }
 
         private void txtnome_Click(object sender, EventArgs e)
@@ -258,39 +237,50 @@ namespace Questão_3
             txtvalorvendas.Text = "Valor das Vendas";
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnCalcula_Click(object sender, EventArgs e)
         {
-            
+
             if (escolha.SelectedIndex == 0)
             {
-                Fornecedor fornecedor = new Fornecedor
+                Fornecedor fornecedor = new Fornecedor();
                 fornecedor.SetValorCredito(Convert.ToDouble(txtvalorcredito.Text));
                 fornecedor.SetValorDivida(Convert.ToDouble(txtvalordividas.Text));
+                MessageBox.Show("O saldo correspondente aos valores indicados é " + fornecedor.ObterSaldo());
             }
 
             if (escolha.SelectedIndex == 1)
             {
                 Vendedor vendedor = new Vendedor();
-
-                vendedor.    txtvalorvendas.Text
-                txtCodigoSetor.Enabled = true;
-                txtsalario.Enabled = true;
+                vendedor.setSalarioBase(Convert.ToDouble(txtsalario.Text));
+                vendedor.setValorVendas(Convert.ToDouble(txtvalorvendas.Text));
+                double comissao = vendedor.CalcularComissao(), salario = vendedor.CalcularSalario(), INSS = vendedor.CalcularValorInss();
+                MessageBox.Show("Salario: " + salario + "\n" + "Comissão: " + comissao + "\n" + "Contribuição ao Inss: " + INSS);
+                
             }
 
             if (escolha.SelectedIndex == 2)
-            { 
-                txtValorproducao.Enabled = true;
-                txtCodigoSetor.Enabled = true;
-                txtsalario.Enabled = true;
+            {
+                Operario operario = new Operario();
+                operario.setSalarioBase(Convert.ToDouble(txtsalario.Text));
+                operario.setValorProducao(Convert.ToDouble(txtValorproducao.Text));
+                double comissao = operario.CalcularComissao(),salario = operario.CalcularSalario(), INSS = operario.CalcularValorInss();
+                MessageBox.Show("Salario: " + salario + "\n" + "Comissão: " + comissao + "\n" + "Contribuição ao Inss: " + INSS);
             }
 
             if (escolha.SelectedIndex == 3)
             {
-                TxtAjuda.Enabled = true;
-                txtsalario.Enabled = true;
-                txtCodigoSetor.Enabled = true;
+                Administrador ADM = new Administrador();
+                ADM.SetAjudaDeCusto(Convert.ToDouble(TxtAjuda.Text));
+                ADM.setSalarioBase(Convert.ToDouble(txtsalario.Text));
+                double  INSS = ADM.CalcularValorInss(), salario = ADM.CalcularSalario(), ajudadecusto = ADM.getAjudaDeCusto();
+                MessageBox.Show("Salario: " + salario + "\n" + "Ajuda de Custo: " + ajudadecusto + "\n" + "Contribuição ao Inss: " + INSS);
             }
 
+        }
+
+        private void txtCodigoSetor_Click(object sender, EventArgs e)
+        {
+            txtCodigoSetor.Text = "";
         }
     }
 }

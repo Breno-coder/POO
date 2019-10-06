@@ -12,6 +12,8 @@ namespace Poo_Questão_2
 {
     public partial class Form1 : Form
     {
+        Calculadora calcula = new Calculadora();
+        CalculadoraCientifica Calculadoracientifica = new CalculadoraCientifica();
         public Form1()
         {
             InitializeComponent();
@@ -24,10 +26,9 @@ namespace Poo_Questão_2
 
         private void btn_adicao_Click(object sender, EventArgs e)
         {
-            soma adicao = new soma();
             try
             {
-                    lbl_resultado.Text = Convert.ToString(adicao.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                    lbl_resultado.Text = Convert.ToString(calcula.somar(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
                     lbl_operador.Text = "+";
                     
             }
@@ -42,8 +43,7 @@ namespace Poo_Questão_2
         {
             try
             {
-                subtracao subtrai = new subtracao();
-                lbl_resultado.Text = Convert.ToString(subtrai.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_resultado.Text = Convert.ToString(calcula.subtrair(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
                 lbl_operador.Text = "-";
                 
             }
@@ -58,8 +58,7 @@ namespace Poo_Questão_2
         {
             try
             {
-                multiplicacao multiplicar = new multiplicacao();
-                lbl_resultado.Text = Convert.ToString(multiplicar.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_resultado.Text = Convert.ToString(calcula.multiplicar(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
                 lbl_operador.Text = "x";
                  
 
@@ -75,8 +74,7 @@ namespace Poo_Questão_2
         {
             try
             {
-                divisao dividir = new divisao();
-                lbl_resultado.Text = Convert.ToString(dividir.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_resultado.Text = Convert.ToString(calcula.dividir(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
                 lbl_operador.Text = "/";
 
 
@@ -93,7 +91,7 @@ namespace Poo_Questão_2
             try
             {
                 CalculadoraCientifica raiz = new CalculadoraCientifica();
-                lbl_resultado.Text = Convert.ToString(raiz.Calcularaiz(Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_resultado.Text = Convert.ToString(Calculadoracientifica.calcularaiz(Convert.ToDouble(txt_Segundonumero.Text)));
                 lbl_operador.Text = "√";
                 txt_Primeironumero.Visible = false; 
             }
@@ -109,7 +107,7 @@ namespace Poo_Questão_2
             try
             {
                 CalculadoraCientifica potencia = new CalculadoraCientifica();
-                lbl_resultado.Text = Convert.ToString(potencia.calcular(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
+                lbl_resultado.Text = Convert.ToString(Calculadoracientifica.calcularpotencia(Convert.ToDouble(txt_Primeironumero.Text), Convert.ToDouble(txt_Segundonumero.Text)));
                 
 
             }
@@ -168,6 +166,8 @@ namespace Poo_Questão_2
             txt_Primeironumero.Visible = true;
             lbl_operador.Text = "";
             lbl_resultado.Text = "";
+            txt_Primeironumero.Text = "";
+            txt_Segundonumero.Text = "";
         }
     }
 }

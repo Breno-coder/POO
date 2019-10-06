@@ -15,7 +15,6 @@ D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\bin\Debu
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csprojAssemblyReference.cache
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão_1.Form1.resources
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão_1.Properties.Resources.resources
-D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão_1.Resultado.resources
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csproj.GenerateResource.cache
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.csproj.CoreCompileInputs.cache
 D:\Desktop\Repositorio\POO\Lista de Exercicios 04\Questão 1\Questão 1\obj\Debug\Questão 1.exe

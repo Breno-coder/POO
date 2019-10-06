@@ -8,7 +8,7 @@ namespace Questão_3
 {
     abstract public class Pessoa
     {
-        string Nome, Endereco;
-        int telefone;
+        readonly string Nome, Endereco;
+        readonly int telefone;
     }
 }

@@ -26,21 +26,17 @@ namespace Questão_1
         private void btncalcular_Click(object sender, EventArgs e)
         {
             Paciente paciente = new Paciente();
-            Resultado resultado = new Resultado();
 
             paciente.setnome(txbnome.Text);
             paciente.setsobrenome(txbsobrenome.Text);
             paciente.setidade(Convert.ToInt32(txbidade.Text));
             paciente.setsexo(escolhasexo.Text);
-             paciente.setaltura(Convert.ToDouble(txbAltura.Text));
+            paciente.setaltura(Convert.ToDouble(txbAltura.Text));
             paciente.setpeso(Convert.ToInt32(txbPeso.Text));
 
             double IMC = paciente.CalculaIMC();
             string Classificacaodoimc = paciente.ClassificaImc(IMC), Classificacaodopercentualdegordura = paciente.ClassificaPercentualGordura(IMC, Convert.ToInt32(txbidade.Text), escolhasexo.Text);
-            // MessageBox.Show();
-            MessageBox.Show(IMC.ToString());
-            MessageBox.Show(Classificacaodoimc);
-            MessageBox.Show(Classificacaodopercentualdegordura);
+            MessageBox.Show("Olá " + paciente.getnome() +" o seu IMC atual é " + IMC.ToString() + ", a classificação correspondente a esse IMC é " + Classificacaodoimc + ", e o percentual de gordura correspondente é " + Classificacaodopercentualdegordura);
         }   
 
         private void txbnome_MouseClick(object sender, MouseEventArgs e)
@@ -71,9 +67,9 @@ namespace Questão_1
 
         private void txbAltura_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar && char == '.' ))
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
             {
-
+                e.Handled = true;
             }
         }
     }

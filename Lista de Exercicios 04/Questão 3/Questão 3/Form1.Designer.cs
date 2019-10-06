@@ -1,6 +1,6 @@
 ﻿namespace Questão_3
 {
-    partial class Form1
+    partial class Receita
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -39,8 +39,8 @@
             this.txttelefone = new System.Windows.Forms.TextBox();
             this.txtendereco = new System.Windows.Forms.TextBox();
             this.txtCodigoSetor = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
             this.Limpar = new System.Windows.Forms.Button();
+            this.btnCalcula = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // escolha
@@ -67,8 +67,6 @@
             this.txtsalario.TabIndex = 1;
             this.txtsalario.Text = "Salario Bruto";
             this.txtsalario.Click += new System.EventHandler(this.txtsalario_Click);
-            this.txtsalario.TextChanged += new System.EventHandler(this.txtsalario_TextChanged);
-            this.txtsalario.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.txtsalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsalario_KeyPress);
             // 
             // TxtAjuda
@@ -80,8 +78,6 @@
             this.TxtAjuda.TabIndex = 2;
             this.TxtAjuda.Text = "Valor da Ajuda de Custo";
             this.TxtAjuda.Click += new System.EventHandler(this.TxtAjuda_Click);
-            this.TxtAjuda.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.TxtAjuda.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.TxtAjuda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAjuda_KeyPress);
             // 
             // txtValorproducao
@@ -93,7 +89,6 @@
             this.txtValorproducao.TabIndex = 3;
             this.txtValorproducao.Text = "Valor da Produção";
             this.txtValorproducao.Click += new System.EventHandler(this.txtValorproducao_Click);
-            this.txtValorproducao.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.txtValorproducao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorproducao_KeyPress);
             // 
             // txtvalorvendas
@@ -105,7 +100,6 @@
             this.txtvalorvendas.TabIndex = 4;
             this.txtvalorvendas.Text = "Valor das Vendas";
             this.txtvalorvendas.Click += new System.EventHandler(this.txtvalorvendas_Click);
-            this.txtvalorvendas.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.txtvalorvendas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtvalorvendas_KeyPress);
             // 
             // txtvalordividas
@@ -117,7 +111,6 @@
             this.txtvalordividas.TabIndex = 5;
             this.txtvalordividas.Text = "Valor das Dividas";
             this.txtvalordividas.Click += new System.EventHandler(this.txtvalordividas_Click);
-            this.txtvalordividas.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.txtvalordividas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtvalordividas_KeyPress);
             // 
             // txtvalorcredito
@@ -129,7 +122,6 @@
             this.txtvalorcredito.TabIndex = 6;
             this.txtvalorcredito.Text = "Valor do Credito";
             this.txtvalorcredito.Click += new System.EventHandler(this.txtvalorcredito_Click);
-            this.txtvalorcredito.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.txtvalorcredito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtvalorcredito_KeyPress);
             // 
             // txtnome
@@ -141,8 +133,6 @@
             this.txtnome.TabIndex = 7;
             this.txtnome.Text = "Nome";
             this.txtnome.Click += new System.EventHandler(this.txtnome_Click);
-            this.txtnome.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
-            this.txtnome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnome_KeyPress);
             // 
             // txttelefone
             // 
@@ -153,7 +143,6 @@
             this.txttelefone.TabIndex = 8;
             this.txttelefone.Text = "Telefone";
             this.txttelefone.Click += new System.EventHandler(this.txttelefone_Click);
-            this.txttelefone.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             this.txttelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefone_KeyPress);
             // 
             // txtendereco
@@ -165,7 +154,6 @@
             this.txtendereco.TabIndex = 9;
             this.txtendereco.Text = "Endereço";
             this.txtendereco.Click += new System.EventHandler(this.txtendereco_Click);
-            this.txtendereco.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
             // 
             // txtCodigoSetor
             // 
@@ -175,35 +163,35 @@
             this.txtCodigoSetor.Size = new System.Drawing.Size(267, 33);
             this.txtCodigoSetor.TabIndex = 10;
             this.txtCodigoSetor.Text = "Codigo do Setor";
-            this.txtCodigoSetor.Enter += new System.EventHandler(this.txtCodigoSetor_Enter);
-            // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Location = new System.Drawing.Point(713, 415);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 11;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.txtCodigoSetor.Click += new System.EventHandler(this.txtCodigoSetor_Click);
             // 
             // Limpar
             // 
-            this.Limpar.Location = new System.Drawing.Point(713, 386);
+            this.Limpar.Location = new System.Drawing.Point(587, 320);
             this.Limpar.Name = "Limpar";
-            this.Limpar.Size = new System.Drawing.Size(75, 23);
+            this.Limpar.Size = new System.Drawing.Size(96, 36);
             this.Limpar.TabIndex = 12;
             this.Limpar.Text = "Limpar";
             this.Limpar.UseVisualStyleBackColor = true;
             this.Limpar.Click += new System.EventHandler(this.Limpar_Click);
             // 
-            // Form1
+            // btnCalcula
+            // 
+            this.btnCalcula.Location = new System.Drawing.Point(689, 320);
+            this.btnCalcula.Name = "btnCalcula";
+            this.btnCalcula.Size = new System.Drawing.Size(99, 36);
+            this.btnCalcula.TabIndex = 13;
+            this.btnCalcula.Text = "Calcular";
+            this.btnCalcula.UseVisualStyleBackColor = true;
+            this.btnCalcula.Click += new System.EventHandler(this.btnCalcula_Click);
+            // 
+            // Receita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(791, 358);
+            this.Controls.Add(this.btnCalcula);
             this.Controls.Add(this.Limpar);
-            this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtCodigoSetor);
             this.Controls.Add(this.txtendereco);
             this.Controls.Add(this.txttelefone);
@@ -215,8 +203,10 @@
             this.Controls.Add(this.TxtAjuda);
             this.Controls.Add(this.txtsalario);
             this.Controls.Add(this.escolha);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Receita";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -236,8 +226,8 @@
         private System.Windows.Forms.TextBox txttelefone;
         private System.Windows.Forms.TextBox txtendereco;
         private System.Windows.Forms.TextBox txtCodigoSetor;
-        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button Limpar;
+        private System.Windows.Forms.Button btnCalcula;
     }
 }
 
